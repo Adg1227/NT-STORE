@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const MEU_DISCORD_ID = '422144493953744906'; 
     
     const COTACAO_GOLD = 2.1; 
-    const PRECO_POR_KEY = 9.99;
+    const PRECO_POR_KEY = 9.50;
 
     const tabButtons = document.querySelectorAll('.tab-button');
     const tabContents = document.querySelectorAll('.tab-content');
@@ -122,4 +122,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     updateSummary();
+
 });
