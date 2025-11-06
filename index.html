@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NT STORE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="ntstore.ico">
+</head>
+<body>
+
+    <div class="floating-bubble">
+        <p>Quer sua Key sem esperar um minuto?</p>
+        <a href="https://www.ggmax.com.br/anuncio/flyboss-34-seu-boost-automatico-no-mir4-34" target="_blank">Acesse GGMax!</a>
+    </div>
+
+    <div class="main-layout"> 
+        
+        <main class="container">
+            <h1>🛒CARRINHO🛒</h1>
+
+            <div class="tabs">
+                <button class="tab-button active" data-tab="gold">💱 Venda de Gold</button>
+                <button class="tab-button" data-tab="keydefly">🔑 KeyDeFly</button>
+            </div>
+
+            <div id="gold-content" class="tab-content active">
+                <h3>Passo 1: Digite a quantidade de Gold</h3>
+                <input type="number" id="gold-quantity" placeholder="0" min="0">
+                <p>Cotação atual: <span id="gold-cotacao">R$ 0,00</span> por 1k</p>
+                
+                <h3>Passo 2: Informe o servidor</h3>
+                <input type="text" id="gold-server" placeholder="Ex: SA12">
+
+                <h3>Total em R$: <span id="gold-total-display">R$ 0,00</span></h3>
+            </div>
+
+            <div id="keydefly-content" class="tab-content">
+                <h3>Passo 1: Digite a quantidade de Keys</h3>
+                <input type="number" id="key-quantity" placeholder="0" min="0">
+                <p>Preço por Key: R$ 9,99</p>
+                
+                <h3>Passo 2: Informações de Entrega</h3>
+                <input type="text" id="key-nickname" placeholder="Nickname no jogo">
+                <input type="email" id="key-email" placeholder="Email para contato">
+
+                <h3>Total em R$: <span id="key-total-display">R$ 0,00</span></h3>
+            </div>
+
+            <section class="summary">
+                <h2>👑 Resumo e Pagamento 👑</h2>
+                
+                <div class="summary-details">
+                    <p>Total Venda de Gold: <span id="summary-total-gold">R$ 0,00</span></p>
+                    <p>Total KeyDeFly: <span id="summary-total-keydefly">R$ 0,00</span></p>
+                    <hr>
+                    <h3>Total Geral a Pagar: <span id="summary-total-geral">R$ 0,00</span></h3>
+                </div>
+
+                <button id="confirm-order-button">Copiar Pedido e Chamar no Privado</button>
+                <p id="copy-feedback" class="copy-feedback"></p>
+
+                <h3>Formas de Pagamento</h3>
+                <div class="payment-methods">
+                    <div class="payment-option">
+                        <strong>Pix (Celular)</strong>
+                        <p>83986874260</p>
+                        <p>Ademario de Sousa Neto</p>
+                    </div>
+                    <div class="payment-option">
+                        <strong>Binance (ID)</strong>
+                        <p>737705884</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>
